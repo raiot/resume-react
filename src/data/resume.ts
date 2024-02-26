@@ -8,7 +8,13 @@ const resume: Resume = {
       company: 'Wizeline',
       location: 'Remote',
       time: '2022 - current',
-      description: 'As a Senior Software Developer for Wizeline I was involved in planning, artchitecture, deployment and development of a new platform. **Highlights** include: - Leading the development of a new platform - Working with a team of 5+ developers - Implementing a new CI/CD pipeline with Gitub Actions - Implementing a new development strategy - Implementing a new communication strategy',
+      description: `As a Senior Software Developer for Wizeline I was involved in planning, artchitecture, deployment and development of a new platform.
+      **Highlights** include:\
+      - Leading the development of a new platform
+      - Working with a team of 5+ developers
+      - Implementing a new CI/CD pipeline with Gitub Actions
+      - Implementing a new development strategy
+      - Implementing a new communication strategy.`,
       technologies: [
         'React',
         'TypeScript',
@@ -16,7 +22,8 @@ const resume: Resume = {
         'Node.js',
         'Next JS',
         'Github Actions',
-        'React Query'
+        'React Query',
+        'Jira'
       ],
     },
     {
@@ -47,7 +54,7 @@ const resume: Resume = {
     {
       position: 'Senior Software Developer (Frontend)',
       company: 'Mindstrong',
-      location: 'Mexico',
+      location: 'Remote',
       time: '2019 - 2021',
       description: 'As a Senior Software Developer for Mindstrong, I was involved in planning and estimation for new features, I worked closely with Product to setup campaing goals and stadistics, set up copies of the site for A/B testing, approved and reviewed PRs and releases in AWS Pipelines. **Highlights** include: - Set up Google Optimize with several copies for A/B testing - Worked with Product to define goals, funnels and other metrics using Google Analytis - Lead the frontend implementation of a new platform to discover potential leads - Increased Cypress automation test coverage by 20%.',
       technologies: [
@@ -61,27 +68,46 @@ const resume: Resume = {
         'React Testing Library',
         'Node JS',
         'Google Analytics',
-        'Google Optimize'
+        'Google Optimize',
+        'Jira'
       ],
     },
     {
       position: 'Senior Software Developer (Frontend)',
-      company: 'Mindstrong',
-      location: 'Mexico',
-      time: '2019 - 2021',
-      description: 'As a Senior Software Developer for Mindstrong, I was involved in planning and estimation for new features, I worked closely with Product to setup campaing goals and stadistics, set up copies of the site for A/B testing, approved and reviewed PRs and releases in AWS Pipelines. **Highlights** include: - Set up Google Optimize with several copies for A/B testing - Worked with Product to define goals, funnels and other metrics using Google Analytis - Lead the frontend implementation of a new platform to discover potential leads - Increased Cypress automation test coverage by 20%.',
+      company: 'Nextiva',
+      location: 'Guadalajara, México',
+      time: '2018 - 2019',
+      description: 'As a Senior Software Developer for Nextiva, I was involved in improving the security and performance of the app. **Highlights** include: - Lead initiaive to improve deploy performance, decreasing 60% build time - Worked with Backend to set up session using JWToken  - Add test 70% of test coverage. - Setup nginx to avoid COORS issues in internal apps.',
       technologies: [
         'TypeScript',
         'React',
         'Redux',
-        'Redux Toolkin',
-        'Cypress',
-        'Auth0',
+        'JWToken',
         'Jest',
         'React Testing Library',
-        'Node JS',
-        'Google Analytics',
-        'Google Optimize'
+        'REST',
+        'Nginx',
+        'Jenkins',
+        'Jira'
+      ],
+    },
+    {
+      position: 'Software Developer (Frontend)',
+      company: 'HomeAway (Vrbo/Expedia)',
+      location: 'Guadalajara, México',
+      time: '2016 - 2018',
+      description: 'As a Senior Software Developer for HomrAway, I was involved in migrating the onboarding flow and the property managment flow from Java/Spring/JSP to React/Typescript/Node. **Highlights** include: - Debugging crucial parts of the property state machine.',
+      technologies: [
+        'TypeScript',
+        'React',
+        'Redux',
+        'NodeJS',
+        'HapiJS',
+        'Enzyme',
+        'Java',
+        'GraphQL',
+        'Spring',
+        'Jira'
       ],
     },
   ],
