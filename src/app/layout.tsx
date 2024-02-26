@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from 'next/script';
 import { Roboto } from 'next/font/google'
+import { GoogleTagManager } from '@next/third-parties/google';
 import "./globals.css";
 
 import { Providers } from "@/components/Providers";
@@ -17,6 +18,8 @@ export const metadata: Metadata = {
 };
 
 import '../../public/assets/css/orbit-6.css'
+
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID || '';
 
 export default function RootLayout({
   children,
@@ -48,6 +51,7 @@ export default function RootLayout({
             {children}
           </Providers>
         </main>
+        <GoogleTagManager gtmId={gtmId} />
       </body>
     </html>
   )
