@@ -4,7 +4,7 @@ import React, { useContext } from 'react'
 
 import DeveloperContext from '../../../context/DeveloperContext'
 
-const languageItem = (item: DeveloperLanguage, index) => {
+const languageItem = (item: DeveloperLanguage, index: number) => {
   return (
     <li key={index}>{item.name} <span className="lang-desc">({item.level})</span></li>
   )
