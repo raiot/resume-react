@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <div className="profile-container flex flex-col items-center">
       <Img
-        className="profile"
+        className="rounded-full my-6 min-w-44"
         alt="logo"
         src="/images/developer.png"
         height={ 100 }

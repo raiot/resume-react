@@ -10,7 +10,7 @@ import Profile from '@/components/Sidebar/Profile/Profile'
 
 const Sidebar = () =>{
   return (
-    <div className="sidebar-wrapper">
+    <div className="sidebar-wrapper min-w-64">
       <Profile />
       <Contact />
       <Education />

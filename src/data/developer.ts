@@ -2,24 +2,28 @@
 
 const developer: Developer = {
   profile: {
-    name: 'Developer Name',
-    tagline: 'Full Stack Developer',
+    name: 'René Durazo',
+    tagline: 'Software Developer',
   },
   contact: {
-    email: 'info@otfusion.org',
-    phone: '+12345787222',
-    website: {
-      name: 'jmsalcido.dev',
-      url: 'https://jmsalcido.dev',
+    email: 'hello@renedurazo.com',
+    phone: '+52 (662) 224-65-13',
+    website: [{
+      name: 'renedurazo.com',
+      url: 'https://renedurazo.com',
     },
-    linkedin: 'jmsalcido',
-    github: 'jmsalcido',
-    twitter: 'jmsalcido',
+    {
+      name: 'renedurazo.dev',
+      url: 'https://renedurazo.dev',
+    }],
+    linkedin: 'renedurazo',
+    github: 'raiot',
+    twitter: 'rene_du',
   },
   education: [{
-    degree: 'Software Engineering',
-    school: 'School Name',
-    time: '2009-2013',
+    degree: 'Bachelor of Science in Computer Science',
+    school: 'Instituto Tecnológico de Hermosillo',
+    time: '2007-2011',
   }],
   languages: [{
     name: 'Spanish',
@@ -31,11 +35,9 @@ const developer: Developer = {
   },
   ],
   interests: [
-    'Composing Music',
-    'Baking',
+    'Horror Movies',
+    'Videogames',
     'Cooking',
-    'Running',
-    'Podcasting',
     'Videogames',
     'Creating stuff',
   ],

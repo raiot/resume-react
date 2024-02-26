@@ -16,6 +16,8 @@ function Footer () {
         <small className="copyright">
           Coded with React and <i className="fas fa-heart"/>&nbsp;
           by <ExternalLink href="http://jmsalcido.dev">Jose Salcido</ExternalLink>
+          &nbsp;
+          and <ExternalLink href="http://renedurazo.dev">Rene Durazo</ExternalLink>
         </small>
       </div>
     </footer>

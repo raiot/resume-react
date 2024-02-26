@@ -7,7 +7,7 @@ import DeveloperContext from '@/context/DeveloperContext'
 const listItem = (name: string, faClass: string, href: string, blank: boolean, text = '', prop?: string) => {
   if (prop) {
     return (
-      <li className={name}>
+      <li key={name} className={name}>
         <i className={faClass}></i>
         {blank ?
           <a href={href} rel="noopener noreferrer" target="_blank">{text}</a>
@@ -28,7 +28,10 @@ const Contact = () => {
 
   const renderEmail = listItem('email', 'fas fa-envelope', `mailto: ${email}`, false, email, email)
   const renderPhone = listItem('phone', 'fas fa-phone', `tel:${phone}`, false, phone, phone)
-  const renderWebsite = listItem('website', 'fas fa-globe', website?.url ?? '', true, website?.url, website?.url)
+  const renderWebsites = Array.isArray(website) ?
+    website.map((web) => listItem('website', 'fas fa-globe', web?.url ?? '', true, web?.url, web?.url))
+    :
+    listItem('website', 'fas fa-globe', website?.url ?? '', true, website?.url, website?.url)
   const renderLinkedin = listItem('linkedin', 'fab fa-linkedin-in', `https://linkedin.com/in/${linkedin}`, true, linkedin, linkedin)
   const renderGithub = listItem('github', 'fab fa-github', `https://github.com/${github}`, true, github, github)
   const renderTwitter = listItem('twitter', 'fab fa-twitter', `https://twitter.com/${twitter}`, true, `@${twitter}`, twitter)
@@ -38,7 +41,7 @@ const Contact = () => {
       <ul className="list-unstyled contact-list">
         {renderEmail}
         {renderPhone}
-        {renderWebsite}
+        {renderWebsites}
         {renderLinkedin}
         {renderGithub}
         {renderTwitter}

@@ -9,13 +9,15 @@ interface DeveloperEducation {
   time: string;
 }
 
+type Website = {
+  name: string;
+  url: string;
+}
+
 interface DeveloperContact {
   email: string;
   phone: string;
-  website?: {
-    name: string;
-    url: string;
-  },
+  website?: Website | Website[],
   linkedin?: string;
   github?: string;
   twitter?: string;
